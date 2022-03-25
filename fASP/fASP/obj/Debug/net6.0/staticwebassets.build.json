@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "mhst8Mhr55Mi6mJCx+EPooSgLM1Rvr+cAgIv0ubdHOg=",
+  "Source": "fASP",
+  "BasePath": "_content/fASP",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "fASP\\wwwroot",
+      "Source": "fASP",
+      "ContentRoot": "D:\\ASP.NET\\LearningASP\\fASP\\fASP\\wwwroot\\",
+      "BasePath": "_content/fASP",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
