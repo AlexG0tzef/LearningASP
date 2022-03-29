@@ -1,4 +1,5 @@
-﻿<meta charset="utf-8" />
+﻿@using fASP.Service
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
 @if(ViewBag.Title != null)
@@ -7,7 +8,7 @@
 }
 else
 {
-    <title>Test</title>
+    <title>@Config.ProjectName</title>
 }
 
 @if(ViewBag.Description != null)
