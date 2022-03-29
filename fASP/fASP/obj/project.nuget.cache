@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3Kr//AZm6pW0rRbdVMpQ8i4ww11ky8YwlGvfOiPrE7QrdAS+Ji7Q9ptitE828SWWO4XVpe/UA3/uXpxy0Oq19w==",
+  "dgSpecHash": "8lMSGv61oBW4fPIjX1UN54/JsaqoSK5M7a6FTA6rPjTVP1bNsgboLFqzsqfpHBeVKHoVoBOSKB0oXsLBHDqkkA==",
   "success": true,
   "projectFilePath": "D:\\ASP.NET\\LearningASP\\fASP\\fASP\\fASP.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,7 @@
     "C:\\Users\\Alexandr\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.3\\microsoft.entityframeworkcore.design.6.0.3.nupkg.sha512",
     "C:\\Users\\Alexandr\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.3\\microsoft.entityframeworkcore.relational.6.0.3.nupkg.sha512",
     "C:\\Users\\Alexandr\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.3\\microsoft.entityframeworkcore.sqlserver.6.0.3.nupkg.sha512",
+    "C:\\Users\\Alexandr\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.3\\microsoft.entityframeworkcore.tools.6.0.3.nupkg.sha512",
     "C:\\Users\\Alexandr\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Alexandr\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\Alexandr\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
