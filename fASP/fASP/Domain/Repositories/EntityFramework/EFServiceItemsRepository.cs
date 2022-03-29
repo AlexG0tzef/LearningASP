@@ -18,7 +18,7 @@ namespace fASP.Domain.Repositories.EntityFramework
             return context.serviceItems;
         }
 
-        public ServiceItem GetServiceItemById(Guid ID)
+        public ServiceItem GetServiceItemById(int ID)
         {
             return context.serviceItems.Where(x => x.Id == ID).FirstOrDefault();
         }
@@ -36,7 +36,7 @@ namespace fASP.Domain.Repositories.EntityFramework
             context.SaveChanges();
         }
 
-        public void DeleteServiceItem(Guid ID)
+        public void DeleteServiceItem(int ID)
         {
             context.serviceItems.Remove(new ServiceItem() { Id = ID });
             context.SaveChanges();

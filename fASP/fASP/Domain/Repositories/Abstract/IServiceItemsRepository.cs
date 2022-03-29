@@ -5,8 +5,8 @@ namespace fASP.Domain.Repositories.Abstract
     public interface IServiceItemsRepository
     {
         IQueryable<ServiceItem> GetServiceItems();
-        ServiceItem GetServiceItemById(Guid ID);
+        ServiceItem GetServiceItemById(int ID);
         void SaveServiceItem(ServiceItem entity);
-        void DeleteServiceItem(Guid ID);
+        void DeleteServiceItem(int ID);
     }
 }

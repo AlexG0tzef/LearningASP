@@ -24,9 +24,11 @@ namespace fASP.Migrations
 
             modelBuilder.Entity("fASP.Domain.Entities.ServiceItem", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("DataAdded")
                         .HasColumnType("datetime2");
@@ -66,9 +68,11 @@ namespace fASP.Migrations
 
             modelBuilder.Entity("fASP.Domain.Entities.TextField", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("CodeWord")
                         .IsRequired()
@@ -112,9 +116,9 @@ namespace fASP.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"),
+                            Id = 1,
                             CodeWord = "PageIndex",
-                            DataAdded = new DateTime(2022, 3, 29, 11, 56, 21, 967, DateTimeKind.Utc).AddTicks(8612),
+                            DataAdded = new DateTime(2022, 3, 29, 12, 24, 1, 932, DateTimeKind.Utc).AddTicks(3628),
                             MetaDescription = "",
                             MetaKeywords = "",
                             MetaTitle = "",
@@ -125,9 +129,9 @@ namespace fASP.Migrations
                         },
                         new
                         {
-                            Id = new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"),
+                            Id = 2,
                             CodeWord = "PageServices",
-                            DataAdded = new DateTime(2022, 3, 29, 11, 56, 21, 967, DateTimeKind.Utc).AddTicks(8640),
+                            DataAdded = new DateTime(2022, 3, 29, 12, 24, 1, 932, DateTimeKind.Utc).AddTicks(3639),
                             MetaDescription = "",
                             MetaKeywords = "",
                             MetaTitle = "",
@@ -138,9 +142,9 @@ namespace fASP.Migrations
                         },
                         new
                         {
-                            Id = new Guid("4aa76a4c-c59d-409a-84c1-06e6487a137a"),
+                            Id = 3,
                             CodeWord = "PageContacts",
-                            DataAdded = new DateTime(2022, 3, 29, 11, 56, 21, 967, DateTimeKind.Utc).AddTicks(8649),
+                            DataAdded = new DateTime(2022, 3, 29, 12, 24, 1, 932, DateTimeKind.Utc).AddTicks(3647),
                             MetaDescription = "",
                             MetaKeywords = "",
                             MetaTitle = "",
@@ -181,7 +185,7 @@ namespace fASP.Migrations
                         new
                         {
                             Id = "44546e06-8719-4ad8-b88a-f271ae9d6eab",
-                            ConcurrencyStamp = "b4238c78-255d-49f2-8609-d2173712989a",
+                            ConcurrencyStamp = "053d6cbd-06e2-4ecf-bbbb-4b9b92a4185f",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -281,13 +285,13 @@ namespace fASP.Migrations
                         {
                             Id = "3b62472e-4f66-49fa-a20f-e7685b9565d8",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "cfadb2bf-fa3e-4163-9500-140b9d882b28",
+                            ConcurrencyStamp = "e4916ef3-7297-4bd9-a16c-2943b1de5f6d",
                             Email = "my@email.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "MY@EMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEI1JKDtSzP93dpBZ3K+un3E7ZOag4+Qpu2E6Y9SDU4DRcKn+dOREvlCUblc02ohxDg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDdv2VNjHd281zFSOew6gwhkbqIu7slzDKsI5c+xAB+ddArR+SQdC2PKfxTD91pHLw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,

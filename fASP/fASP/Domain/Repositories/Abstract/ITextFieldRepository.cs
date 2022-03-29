@@ -5,9 +5,9 @@ namespace fASP.Domain.Repositories.Abstract
     public interface ITextFieldRepository
     {
         IQueryable<TextField> GetTextFields();
-        TextField GetTextFieldById(Guid ID);
+        TextField GetTextFieldById(int  ID);
         TextField GetTextFieldByCodeWord(string codeWord);
         void SaveTextField(TextField entity);
-        void DeleteTextField(Guid ID);
+        void DeleteTextField(int ID);
     }
 }

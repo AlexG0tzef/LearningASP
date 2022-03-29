@@ -7,7 +7,7 @@ namespace fASP.Domain.Entities
         protected EntityBase() => DataAdded = DateTime.UtcNow;
 
         [Required]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         [Display(Name = "Название (заголовок)")]
         public virtual string Title { get; set; } = "";

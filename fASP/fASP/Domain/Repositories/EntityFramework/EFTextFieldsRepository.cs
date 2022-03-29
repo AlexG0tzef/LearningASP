@@ -18,7 +18,7 @@ namespace fASP.Domain.Repositories.EntityFramework
             return context.textFields; 
         }
 
-        public TextField GetTextFieldById(Guid ID)
+        public TextField GetTextFieldById(int ID)
         {
             return context.textFields.Where(x => x.Id == ID).FirstOrDefault();
         }
@@ -41,7 +41,7 @@ namespace fASP.Domain.Repositories.EntityFramework
             context.SaveChanges();
         }
 
-        public void DeleteTextField(Guid ID)
+        public void DeleteTextField(int ID)
         {
             context.textFields.Remove(new TextField() { Id = ID });
             context.SaveChanges();

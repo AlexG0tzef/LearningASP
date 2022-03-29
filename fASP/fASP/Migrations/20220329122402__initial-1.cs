@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace fASP.Migrations
 {
-    public partial class _initial : Migration
+    public partial class _initial1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -52,7 +52,8 @@ namespace fASP.Migrations
                 name: "serviceItems",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Subtitle = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Text = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -71,7 +72,8 @@ namespace fASP.Migrations
                 name: "textFields",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     CodeWord = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Text = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -196,21 +198,21 @@ namespace fASP.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "44546e06-8719-4ad8-b88a-f271ae9d6eab", "b4238c78-255d-49f2-8609-d2173712989a", "admin", "ADMIN" });
+                values: new object[] { "44546e06-8719-4ad8-b88a-f271ae9d6eab", "053d6cbd-06e2-4ecf-bbbb-4b9b92a4185f", "admin", "ADMIN" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "3b62472e-4f66-49fa-a20f-e7685b9565d8", 0, "cfadb2bf-fa3e-4163-9500-140b9d882b28", "my@email.com", true, false, null, "MY@EMAIL.COM", "ADMIN", "AQAAAAEAACcQAAAAEI1JKDtSzP93dpBZ3K+un3E7ZOag4+Qpu2E6Y9SDU4DRcKn+dOREvlCUblc02ohxDg==", null, false, "", false, "admin" });
+                values: new object[] { "3b62472e-4f66-49fa-a20f-e7685b9565d8", 0, "e4916ef3-7297-4bd9-a16c-2943b1de5f6d", "my@email.com", true, false, null, "MY@EMAIL.COM", "ADMIN", "AQAAAAEAACcQAAAAEDdv2VNjHd281zFSOew6gwhkbqIu7slzDKsI5c+xAB+ddArR+SQdC2PKfxTD91pHLw==", null, false, "", false, "admin" });
 
             migrationBuilder.InsertData(
                 table: "textFields",
                 columns: new[] { "Id", "CodeWord", "DataAdded", "MetaDescription", "MetaKeywords", "MetaTitle", "Subtitle", "Text", "Title", "TitleImagePath" },
                 values: new object[,]
                 {
-                    { new Guid("4aa76a4c-c59d-409a-84c1-06e6487a137a"), "PageContacts", new DateTime(2022, 3, 29, 11, 56, 21, 967, DateTimeKind.Utc).AddTicks(8649), "", "", "", "", "Содержание заполняется администратором", "Контакты", "" },
-                    { new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"), "PageIndex", new DateTime(2022, 3, 29, 11, 56, 21, 967, DateTimeKind.Utc).AddTicks(8612), "", "", "", "", "Содержание заполняется администратором", "Главная", "" },
-                    { new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"), "PageServices", new DateTime(2022, 3, 29, 11, 56, 21, 967, DateTimeKind.Utc).AddTicks(8640), "", "", "", "", "Содержание заполняется администратором", "Наши услуги", "" }
+                    { 1, "PageIndex", new DateTime(2022, 3, 29, 12, 24, 1, 932, DateTimeKind.Utc).AddTicks(3628), "", "", "", "", "Содержание заполняется администратором", "Главная", "" },
+                    { 2, "PageServices", new DateTime(2022, 3, 29, 12, 24, 1, 932, DateTimeKind.Utc).AddTicks(3639), "", "", "", "", "Содержание заполняется администратором", "Наши услуги", "" },
+                    { 3, "PageContacts", new DateTime(2022, 3, 29, 12, 24, 1, 932, DateTimeKind.Utc).AddTicks(3647), "", "", "", "", "Содержание заполняется администратором", "Контакты", "" }
                 });
 
             migrationBuilder.InsertData(
